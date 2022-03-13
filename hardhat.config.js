@@ -27,6 +27,11 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
+    localdev: {
+      url: process.env.LOCALDEV || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
     ropsten: {
       url: process.env.ROPSTEN_URL || "",
       accounts:
