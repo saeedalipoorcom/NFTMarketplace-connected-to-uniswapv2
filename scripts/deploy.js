@@ -13,7 +13,7 @@ async function main() {
 
   await NFTMarketContract.deployed();
 
-  console.log("NFTContract deployed to:", NFTMarketContract.address);
+  console.log("NFTMarketContract deployed to:", NFTMarketContract.address);
 
 }
 
